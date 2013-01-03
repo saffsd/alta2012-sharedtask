@@ -1,7 +1,7 @@
 This repository contains all the necessary code to replicate my
-experiments from my winning submission to the ALTA2012 shared task.
+experiments from my winning submission to the ALTA2012 shared task [1].
 
-It uses the hydrat[1] framework to manage the experiments and 
+It uses the hydrat[2] framework to manage the experiments and 
 display/explore the results. The .hydratrc must be modified to
 include a key "alta2012-ebm" under the "[corpora]" section, which
 should contain the path to the training/test data.
@@ -12,7 +12,9 @@ experiments. Running the experiments will require libsvm to be installed,
 and the appropriate paths configured in the .hydratrc. `corpora.py` contains
 the actual implementation of the feature sets used.
 
+
 Marco Lui
 January 2013
 
-[1] http://hydrat.googlecode.com
+[1] http://aclweb.org/anthology-new/U/U12/U12-1019.pdf
+[2] http://hydrat.googlecode.com

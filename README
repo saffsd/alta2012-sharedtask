@@ -1,0 +1,18 @@
+This repository contains all the necessary code to replicate my
+experiments from my winning submission to the ALTA2012 shared task.
+
+It uses the hydrat[1] framework to manage the experiments and 
+display/explore the results. The .hydratrc must be modified to
+include a key "alta2012-ebm" under the "[corpora]" section, which
+should contain the path to the training/test data.
+
+To reproduce the experiments, first run `features.py` to generate all
+the feature sets used, then run `ebmcat_stacking.py` to run the actual
+experiments. Running the experiments will require libsvm to be installed,
+and the appropriate paths configured in the .hydratrc. `corpora.py` contains
+the actual implementation of the feature sets used.
+
+Marco Lui
+January 2013
+
+[1] http://hydrat.googlecode.com
